@@ -1,0 +1,40 @@
+module.exports = {
+
+  base: {
+    facebook: {
+      clientID: '1549040435369539',
+      clientSecret: '4a4afc6c2b46c1063a72508f740ee08b'
+    },
+    session: {
+      prefix: 'bloc'
+    }
+  },
+
+  development: {
+    database: {
+      username: 'root',
+      password: '',
+      database: 'block_io_development',
+      options: {
+        client: 'mysql'
+      }
+    },
+    redis: {
+      host: 'localhost',
+      port: 6379
+    }
+  },
+
+  production: {
+    database: {
+      url: process.env.DATABASE_URL,
+      options: {
+        client: 'postgres'
+      }
+    },
+    redis: {
+      url: process.env.REDISCLOUD_URL
+    }
+  }
+
+}
