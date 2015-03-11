@@ -1,8 +1,6 @@
 {
   "development": {
-    "driver": "mysql",
-    "user": "root",
-    "password": "",
+    "driver": "postgres",
     "host": "localhost",
     "database": "block_io_development"
   },

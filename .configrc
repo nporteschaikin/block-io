@@ -12,11 +12,9 @@ module.exports = {
 
   development: {
     database: {
-      username: 'root',
-      password: '',
-      database: 'block_io_development',
+      url: 'postgresql://localhost/block_io_development',
       options: {
-        client: 'mysql'
+        client: 'postgres'
       }
     },
     redis: {
