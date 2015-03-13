@@ -11,11 +11,8 @@ module.exports = {
   },
 
   development: {
-    database: {
-      url: 'postgresql://localhost/block_io_development',
-      options: {
-        client: 'postgres'
-      }
+    mongo: {
+      url: 'mongodb://localhost/block'
     },
     redis: {
       host: 'localhost',
@@ -24,11 +21,8 @@ module.exports = {
   },
 
   production: {
-    database: {
-      url: process.env.DATABASE_URL,
-      options: {
-        client: 'postgres'
-      }
+    mongo: {
+      url: process.env.MONGOLAB_URI,
     },
     redis: {
       url: process.env.REDISCLOUD_URL
