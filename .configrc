@@ -1,0 +1,32 @@
+module.exports = {
+
+  base: {
+    facebook: {
+      clientID: '1549040435369539',
+      clientSecret: '4a4afc6c2b46c1063a72508f740ee08b'
+    },
+    session: {
+      prefix: 'bloc'
+    }
+  },
+
+  development: {
+    mongo: {
+      url: 'mongodb://localhost/block'
+    },
+    redis: {
+      host: 'localhost',
+      port: 6379
+    }
+  },
+
+  production: {
+    mongo: {
+      url: process.env.MONGOSOUP_URL
+    },
+    redis: {
+      url: process.env.REDISCLOUD_URL
+    }
+  }
+
+}

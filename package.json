@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start": "./bin/block"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.13",
+    "body-parser": "^1.12.0",
+    "colors": "^1.0.3",
+    "express": "^4.12.1",
+    "lodash": "^3.3.1",
+    "morgan": "^1.5.1",
+    "oauth": "^0.9.12",
+    "redis": "^0.12.1",
+    "socket.io": "^0.9.17",
+    "uuid": "^2.0.1",
+    "mongoose": "^3.8.24"
+  }
+}

@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+
+require('../lib/block')(process.env.PORT || 3333);
